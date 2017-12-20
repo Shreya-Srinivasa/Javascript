@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+		function showText()
+		{
+			document.getElementById('txt').style.display='block'
+			document.getElementById('btn').style.display='block'
+		}
+
+		function hideText()
+		{
+			document.getElementById('txt').style.display='none'
+			document.getElementById('btn').style.display='none'
+		}
+
+		function changeColor()
+		{
+			if(document.getElementById('txt').style.color=='blue')
+			{
+				document.getElementById('txt').style.color='orange'
+			}
+			else if (document.getElementById('txt').style.color='orange')
+			{
+				document.getElementById('txt').style.color='blue'
+			}
+
+		}
+	</script>
+</head>
+<body>
+
+<p id="txt">Hello World!!</p>
+
+<button type="button" onclick="showText()">Show Text</button>
+
+<button type="button" onclick="hideText()">Hide Text</button>
+
+<button id="btn" type="button" onclick="changeColor()">Change Color</button>
+
+</body>
+</html>

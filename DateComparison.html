@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="demo"></p>
+<script>
+	var today, someday, text;
+	today = new Date();
+	someday = new Date();
+	someday.setFullYear(2017, 9 , 12);
+
+	if(someday > today)
+	{
+		text = "Today is before September 24th, 2017";
+	}
+
+	else
+	{
+		text = "Today is after September 24th, 2017";
+	}
+
+	document.getElementById('demo').innerHTML = text;
+</script>
+</body>
+</html>

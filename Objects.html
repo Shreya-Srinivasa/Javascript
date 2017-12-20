@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<p id="type">Type will be displayed here</p>
+	<p id="model">Model will be displayed here</p>
+	<p id="color">Color will be displayed here</p>
+	<button type="button" onclick="GetCarDetails()">Get Car Details</button>
+
+<script>
+	
+	function GetCarDetails()
+	{
+		var car = 
+		{
+			type : "Fiat",
+			model : "500",
+			color : "white"
+		}
+
+		document.getElementById('type').innerHTML = "Car Type : " + car.type;
+		document.getElementById('model').innerHTML = "Car Model : " + car.model;
+		document.getElementById('color').innerHTML = "Car Color : " + car.color;
+
+	}
+	
+</script>
+</body>
+</html>

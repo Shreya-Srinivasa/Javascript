@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="name">School Name will be displayed here</p>
+	<p id="address">School Address will be displayed here</p>
+	<p id="website">School Website will be displayed here</p>
+	<p id="affiliation">School Affiliation will be displayed here</p>
+	<p id="class">School Classes(grades) will be displayed here</p>
+	<p id="strength">School Strength(approx.) will be displayed here</p>
+	<p id="facilities">School Facilities will be displayed here</p>
+	<ul>
+		<li id="1"></li>
+		<li id="2"></li>
+		<li id="3"></li>
+		<li id="4"></li>
+		<li id="5"></li>
+		<li id="6"></li>
+		<li id="7"></li>
+		<li id="8"></li>
+	</ul>
+
+<button type="button" onclick="GetSchoolDetails()">Get School Details</button>
+ 
+<script type="text/javascript">
+	function GetSchoolDetails()
+	{
+		var school = 
+	{
+		name : "Sophia High School",
+		address : "Palace Road",
+		website : "www.sophiaInvarsity.net",
+		affiliation : "ICSE",
+		class : "Nursery to 12th with Evening College",
+		strength : "About 3000",
+	}
+
+	var facilities = ["throw ball nets", "basket ball court", "play ground", "park(2)", "canteen", "stationary", "auditorium", "hall(2)"]
+
+	document.getElementById('name').innerHTML = "School Name : " + school.name;
+	document.getElementById('address').innerHTML = "School Address : " + school.address;
+	document.getElementById('website').innerHTML = "School Website : " + school.website;
+	document.getElementById('affiliation').innerHTML = "School Affiliation : " + school.affiliation;
+	document.getElementById('class').innerHTML = "School Classes(grades) : " + school.class;
+	document.getElementById('strength').innerHTML = "School Strength : " + school.strength;
+
+	//facilities
+	document.getElementById('facilities').innerHTML = "Facilities Available :";
+
+	document.getElementById('1').innerHTML = facilities[0];
+	document.getElementById('2').innerHTML = facilities[1];
+	document.getElementById('3').innerHTML = facilities[2];
+	document.getElementById('4').innerHTML = facilities[3];
+	document.getElementById('5').innerHTML = facilities[4];
+	document.getElementById('6').innerHTML = facilities[5];
+	document.getElementById('7').innerHTML = facilities[6];
+	document.getElementById('8').innerHTML = facilities[7];
+
+	}
+
+		
+	
+
+</script>
+</body>
+</html>

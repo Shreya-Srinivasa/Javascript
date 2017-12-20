@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body onload="ShowTime()">
+
+<p><pre>
+Hover over the button to see the time
+and hover out from the button to stop 
+seeing the time... </pre></p>
+
+<button onmouseover="ShowTime()" onmouseout="HideTime()">Hover Over Me</button>
+
+<p id="load"></p>
+<p id="demo"></p>
+
+<script>
+function ShowTime()
+{
+	document.getElementById('demo').innerHTML=Date();
+}
+
+function HideTime()
+{
+	document.getElementById('demo').innerHTML='' ;
+}
+</script>
+</body>
+</html> 

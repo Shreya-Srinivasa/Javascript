@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+		function displayName()
+		{
+			var fn = document.getElementById('fn').value();
+			var ln = document.getElementById('ln').value();
+			var email = document.getElementsByName("email")[0].value();
+			var fullInfo = fn + " " + ln + "(" + email + ")";
+			document.getElementById('details') = fullInfo;
+			console.log(fullInfo);
+		}
+	</script>
+</head>
+<body>
+First Name : <input type="text" name="fn" id="fn" value="First"><br>
+Last Name : <input type="text" name="ln" id="ln" value="Last"><br>
+Email : <input type="text" name="email" id="email" value="someone@something.com"><br>
+
+<button type="button" onclick="displayName()">Display Full Details</button><br>
+
+<p id="details" name="details">Info will be displayed here</p>
+</body>
+</html>

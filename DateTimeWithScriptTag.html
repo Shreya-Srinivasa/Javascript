@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+		function DateTimeID()
+		{
+			document.getElementById('txtID').innerHTML = Date();
+		}
+
+		function DateTimeName()
+		{
+			document.getElementsByName('txtName')[0].innerHTML = Date();
+		}
+	</script>
+</head>
+<body>
+<a href="Home.html" >
+	<button">
+		 Home 
+	</button>
+</a> <br><br>
+
+<h2 style="text-align: center;">Class 1 Date Time With Script Tag</h2>
+
+<button type="button" onclick="DateTimeID()">Get Date And Time By ID</button>
+<p id="txtID"></p> <br><br>
+
+<button type="button" onclick="DateTimeName()">Get Date And Time By Name</button>
+<p name="txtName"></p>
+</body>
+</html>

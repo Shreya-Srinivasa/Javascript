@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div class="container jumbotron"></div>
+	<h2 class="text-center">My Shop</h2><br><br>
+	Enter Item <input type="text" id="item"><br>
+	Enter Price/item <input type="text" id="price"><br>
+	Enter Quantity in kg <input type="text" id="quantity"><br>
+	Enter Discount <input type="text" id="discount"><br>
+	<button type="button" onclick="GetTotalPrice()">Show Total Price</button><br>
+
+	<input type="text" id="result">
+
+<script>
+	function GetTotalPrice()
+	{
+		var price = document.getElementById("price").value;
+		var quantity = document.getElementById("quantity").value;
+		var discount = document.getElementById("discount").value;
+		var priceWithoutDiscount = price*quantity;
+		var totalDiscount = priceWithoutDiscount*discount/100;
+		var priceWithDiscount = priceWithoutDiscount - totalDiscount;
+		document.getElementById("result").value = priceWithDiscount;
+	}
+</script>
+
+</body>
+</html>

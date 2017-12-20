@@ -1,0 +1,31 @@
+v8 engine of chrome
+javascript is case sensitive
+lines on codes are called js statements
+should end with semicolon(;)
+
+js keywords
+*break
+*if - else
+*switch
+
+%modulus
+++increment
+--decrement
++addition
+-subtraction
+*multiplication
+/division
+
+assignment operators:
+x = y ~ x = y
+x + = y ~ x = x = x + y
+x - = y ~ x = x = x - y
+x * = y ~ x = x = x * y
+x / = y ~ x = x = x / y
+x % = y ~ x = x = x % y
+
+prefix and suffix - x++ and ++x are different
+
+document.write - to write through js (for testing and debugging)
+window.alert - to show alert popup on screen
+console.log - seen on developer tools(for testing and debugging)

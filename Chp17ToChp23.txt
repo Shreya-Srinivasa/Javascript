@@ -1,0 +1,36 @@
+-->do while loops
+------------------------------------------------------------------------------------------------
+-->for loops
+------------------------------------------------------------------------------------------------
+-->arrays
+------------------------------------------------------------------------------------------------
+-->array methods and mutators: 
+
+*push - adds new item to the end of the array
+*pop - deletes last item and returns
+*unshift - adds new item to the start of the array
+*shift - deletes first item on array and returns
+*splice - adds or removes methods
+*sort - sorts elements of an array by converting to string and comparing strings
+*compare - has 2 parameters, a and b. This function subtracts a from b and gives result.
+    ---descending
+	b-a
+    ---ascending
+	a-b
+*reverse - reverses order of items in array
+------------------------------------------------------------------------------------------------
+-->array filter methods
+
+*filter method is an instance method. 
+*Requires 2 parameters - callbackFunction and this arguement
+*callbackFunction - Gets called for each element of the array. If function returns true, element is kept, else filtered. Has 3 parameters - value, index and array
+      ---value - contains value of the element in the array.
+      ---index - specifies index position of the element in the array.
+      ---array - contains source array objects that contains elements that we want to filter.
+*thisArg - An object to which the 'this' keyword can refer in the callbackFn.
+*document.write - print
+*common interview question - how to remove duplicate elements in array(filter method)
+------------------------------------------------------------------------------------------------
+-->Two Dimensional Arrays
+* &emsp; will give 1 tab space
+* &times; will give tiny x mark like

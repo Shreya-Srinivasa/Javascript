@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<p>Hello World!!</p>
+<p id="demo1"></p>
+<button type="button" onclick="searchStr()">Click to see position of World</button><br>
+------------------------------<br>
+<p id="para">The best things in life are free!...</p>
+<p id="demo2"></p>
+<button type="button" onclick="CheckforStr()">Check if there are any '!'s in the above para</button><br><br>------------------------------<br>
+<p id="demo3"></p>
+<button type="button" onclick="myFunction()">Check it outs</button><br>------------------------------<br>
+
+<script>
+	function searchStr()
+	{
+		var str = "Hello World!!"
+		var result = str.search(/World/i);
+		document.getElementById('demo1').innerHTML = result;
+	}
+
+	function CheckforStr()
+	{
+		var text = document.getElementById('para').innerHTML;
+		result = /!/.test(text);
+		document.getElementById('demo2').innerHTML = result;
+	}
+
+	function myFunction()
+	{
+		var str = "There are 102 chapters in KUDVENKAT c# tutorial..."
+		var pat = /[KUDVENKAT]/g;
+		var result = str.match(pat);
+		document.getElementById('demo3').innerHTML = result;
+	}
+
+</script>
+</body>
+</html>

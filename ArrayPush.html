@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<button type="button" onclick="FruitsPush()">Add Another Fruit</button>
+<p id="demo"></p>
+
+<script>
+	var fruits = ["Avocado ", " Kiwi ", " Strawberry ", " Mango "];
+	document.getElementById('demo').innerHTML = fruits;
+
+	function FruitsPush()
+	{
+		fruits.push("Litchi");
+		document.getElementById('demo').innerHTML = fruits;
+	}
+
+	
+	
+</script>
+	
+</body>
+</html>
